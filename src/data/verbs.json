@@ -1,0 +1,752 @@
+[
+  {
+    "infinitive": "arise",
+    "simplePast": "arose",
+    "participle": "arisen",
+    "translation": "surgir"
+  },
+  {
+    "infinitive": "awake",
+    "simplePast": "awoke",
+    "participle": "awoken",
+    "translation": "despertar"
+  },
+  {
+    "infinitive": "be (am/is/are)",
+    "simplePast": "was/were",
+    "participle": "been",
+    "translation": "ser/estar"
+  },
+  {
+    "infinitive": "bear",
+    "simplePast": "bore",
+    "participle": "borne",
+    "translation": "suportar"
+  },
+  {
+    "infinitive": "beat",
+    "simplePast": "beat",
+    "participle": "beaten",
+    "translation": "bater/batucar"
+  },
+  {
+    "infinitive": "become",
+    "simplePast": "became",
+    "participle": "become",
+    "translation": "torna-se"
+  },
+  {
+    "infinitive": "begin",
+    "simplePast": "began",
+    "participle": "begun",
+    "translation": "começar"
+  },
+  {
+    "infinitive": "bend",
+    "simplePast": "bent",
+    "participle": "bent",
+    "translation": "curva-se"
+  },
+  {
+    "infinitive": "bet",
+    "simplePast": "bet",
+    "participle": "bet",
+    "translation": "apostar"
+  },
+  {
+    "infinitive": "bite",
+    "simplePast": "bit",
+    "participle": "bitten",
+    "translation": "morder"
+  },
+  {
+    "infinitive": "bleed",
+    "simplePast": "bled",
+    "participle": "bled",
+    "translation": "sangrar"
+  },
+  {
+    "infinitive": "blow",
+    "simplePast": "blew",
+    "participle": "blown",
+    "translation": "soprar"
+  },
+  {
+    "infinitive": "break",
+    "simplePast": "broke",
+    "participle": "broken",
+    "translation": "quebrar"
+  },
+  {
+    "infinitive": "breed",
+    "simplePast": "bred",
+    "participle": "bred",
+    "translation": "criar"
+  },
+  {
+    "infinitive": "bring",
+    "simplePast": "brought",
+    "participle": "brought",
+    "translation": "trazer"
+  },
+  {
+    "infinitive": "build",
+    "simplePast": "built",
+    "participle": "built",
+    "translation": "construir"
+  },
+  {
+    "infinitive": "burst",
+    "simplePast": "burst",
+    "participle": "burst",
+    "translation": "estourar"
+  },
+  {
+    "infinitive": "buy",
+    "simplePast": "bougth",
+    "participle": "bougth",
+    "translation": "comprar"
+  },
+  {
+    "infinitive": "catch",
+    "simplePast": "cautht",
+    "participle": "cautht",
+    "translation": "agarrar"
+  },
+  {
+    "infinitive": "choose",
+    "simplePast": "chose",
+    "participle": "chosen",
+    "translation": "escolher"
+  },
+  {
+    "infinitive": "come",
+    "simplePast": "came",
+    "participle": "come",
+    "translation": "vir"
+  },
+  {
+    "infinitive": "cost",
+    "simplePast": "cost",
+    "participle": "cost",
+    "translation": "custar"
+  },
+  {
+    "infinitive": "cut",
+    "simplePast": "cut",
+    "participle": "cut",
+    "translation": "cortar"
+  },
+  {
+    "infinitive": "deal",
+    "simplePast": "dealt",
+    "participle": "dealt",
+    "translation": "lidar com"
+  },
+  {
+    "infinitive": "dig",
+    "simplePast": "dug",
+    "participle": "dug",
+    "translation": "cavar"
+  },
+  {
+    "infinitive": "do",
+    "simplePast": "did",
+    "participle": "done",
+    "translation": "fazer"
+  },
+  {
+    "infinitive": "draw",
+    "simplePast": "drew",
+    "participle": "drawn",
+    "translation": "desenhar"
+  },
+  {
+    "infinitive": "dream",
+    "simplePast": "dreamt/dreamed",
+    "participle": "dreamt/dreamed",
+    "translation": "sonhar"
+  },
+  {
+    "infinitive": "drink",
+    "simplePast": "drank",
+    "participle": "drunk",
+    "translation": "beber"
+  },
+  {
+    "infinitive": "drive",
+    "simplePast": "drove",
+    "participle": "driven",
+    "translation": "dirigir"
+  },
+  {
+    "infinitive": "eat",
+    "simplePast": "ate",
+    "participle": "eaten",
+    "translation": "comer"
+  },
+  {
+    "infinitive": "fall",
+    "simplePast": "fell",
+    "participle": "fallen",
+    "translation": "cair"
+  },
+  {
+    "infinitive": "feed",
+    "simplePast": "fed",
+    "participle": "fed",
+    "translation": "alimentar"
+  },
+  {
+    "infinitive": "feel",
+    "simplePast": "felt",
+    "participle": "felt",
+    "translation": "sentir"
+  },
+  {
+    "infinitive": "fight",
+    "simplePast": "fought",
+    "participle": "fought",
+    "translation": "lutar"
+  },
+  {
+    "infinitive": "find",
+    "simplePast": "found",
+    "participle": "found",
+    "translation": "achar"
+  },
+  {
+    "infinitive": "flee",
+    "simplePast": "fled",
+    "participle": "fled",
+    "translation": "escapar"
+  },
+  {
+    "infinitive": "fly",
+    "simplePast": "flew",
+    "participle": "flown",
+    "translation": "voar"
+  },
+  {
+    "infinitive": "forbid",
+    "simplePast": "forbade",
+    "participle": "forbidden",
+    "translation": "proibir"
+  },
+  {
+    "infinitive": "forget",
+    "simplePast": "forgot",
+    "participle": "forgotten",
+    "translation": "esquecer"
+  },
+  {
+    "infinitive": "forgive",
+    "simplePast": "forgave",
+    "participle": "forgiven",
+    "translation": "perdoar"
+  },
+  {
+    "infinitive": "freeze",
+    "simplePast": "froze",
+    "participle": "frozen",
+    "translation": "congelar"
+  },
+  {
+    "infinitive": "get",
+    "simplePast": "got",
+    "participle": "gotten",
+    "translation": "obter"
+  },
+  {
+    "infinitive": "give",
+    "simplePast": "gave",
+    "participle": "given",
+    "translation": "dar"
+  },
+  {
+    "infinitive": "simple present",
+    "simplePast": "simple past",
+    "participle": "past participle",
+    "translation": "translation"
+  },
+  {
+    "infinitive": "go",
+    "simplePast": "went",
+    "participle": "gone",
+    "translation": "ir"
+  },
+  {
+    "infinitive": "grind",
+    "simplePast": "ground",
+    "participle": "ground",
+    "translation": "moer"
+  },
+  {
+    "infinitive": "grow",
+    "simplePast": "grew",
+    "participle": "grouwn",
+    "translation": "crescer"
+  },
+  {
+    "infinitive": "hang",
+    "simplePast": "hung",
+    "participle": "hung",
+    "translation": "pendurar"
+  },
+  {
+    "infinitive": "have",
+    "simplePast": "had",
+    "participle": "had",
+    "translation": "ter"
+  },
+  {
+    "infinitive": "hear",
+    "simplePast": "heard",
+    "participle": "heard",
+    "translation": "ouvir"
+  },
+  {
+    "infinitive": "hide",
+    "simplePast": "hid",
+    "participle": "hidden",
+    "translation": "esconder"
+  },
+  {
+    "infinitive": "hit",
+    "simplePast": "hit",
+    "participle": "hit",
+    "translation": "bater"
+  },
+  {
+    "infinitive": "hold",
+    "simplePast": "held",
+    "participle": "held",
+    "translation": "segurar"
+  },
+  {
+    "infinitive": "hurt",
+    "simplePast": "hurt",
+    "participle": "hurt",
+    "translation": "ferir"
+  },
+  {
+    "infinitive": "keep",
+    "simplePast": "kept",
+    "participle": "kept",
+    "translation": "manter"
+  },
+  {
+    "infinitive": "know",
+    "simplePast": "knew",
+    "participle": "known",
+    "translation": "saber/conhecer"
+  },
+  {
+    "infinitive": "kneel",
+    "simplePast": "knelt",
+    "participle": "knelt",
+    "translation": "ajoelhar-se"
+  },
+  {
+    "infinitive": "lay",
+    "simplePast": "laid",
+    "participle": "laid",
+    "translation": "colocar"
+  },
+  {
+    "infinitive": "lead",
+    "simplePast": "led",
+    "participle": "led",
+    "translation": "conduzir"
+  },
+  {
+    "infinitive": "lean",
+    "simplePast": "leant/leaned",
+    "participle": "leant/leaned",
+    "translation": "inclinar-se, apoiar-se"
+  },
+  {
+    "infinitive": "leave",
+    "simplePast": "left",
+    "participle": "left",
+    "translation": "deixar/sair"
+  },
+  {
+    "infinitive": "leap",
+    "simplePast": "leapt",
+    "participle": "leapt",
+    "translation": "pular"
+  },
+  {
+    "infinitive": "lend",
+    "simplePast": "lent",
+    "participle": "lent",
+    "translation": "emprestar"
+  },
+  {
+    "infinitive": "let",
+    "simplePast": "let",
+    "participle": "let",
+    "translation": "permirtir"
+  },
+  {
+    "infinitive": "lie",
+    "simplePast": "lay",
+    "participle": "lain",
+    "translation": "deitar-se"
+  },
+  {
+    "infinitive": "light",
+    "simplePast": "lit",
+    "participle": "lit",
+    "translation": "acender"
+  },
+  {
+    "infinitive": "lose",
+    "simplePast": "lost",
+    "participle": "lost",
+    "translation": "perder"
+  },
+  {
+    "infinitive": "make",
+    "simplePast": "made",
+    "participle": "made",
+    "translation": "fazer"
+  },
+  {
+    "infinitive": "mean",
+    "simplePast": "meant",
+    "participle": "meant",
+    "translation": "significar"
+  },
+  {
+    "infinitive": "meet",
+    "simplePast": "met",
+    "participle": "met",
+    "translation": "encontrar"
+  },
+  {
+    "infinitive": "pay",
+    "simplePast": "paid",
+    "participle": "paid",
+    "translation": "pagar"
+  },
+  {
+    "infinitive": "put",
+    "simplePast": "put",
+    "participle": "put",
+    "translation": "por"
+  },
+  {
+    "infinitive": "read",
+    "simplePast": "read",
+    "participle": "read",
+    "translation": "ler"
+  },
+  {
+    "infinitive": "ride",
+    "simplePast": "rode",
+    "participle": "ridden",
+    "translation": "cavalgar"
+  },
+  {
+    "infinitive": "ring",
+    "simplePast": "rang",
+    "participle": "rung",
+    "translation": "tocar sino, etc"
+  },
+  {
+    "infinitive": "rise",
+    "simplePast": "rose",
+    "participle": "risen",
+    "translation": "levantar-se"
+  },
+  {
+    "infinitive": "run",
+    "simplePast": "rang",
+    "participle": "rung",
+    "translation": "correr"
+  },
+  {
+    "infinitive": "say",
+    "simplePast": "said",
+    "participle": "said",
+    "translation": "dizer"
+  },
+  {
+    "infinitive": "see",
+    "simplePast": "saw",
+    "participle": "seen",
+    "translation": "ver"
+  },
+  {
+    "infinitive": "seek",
+    "simplePast": "sougth",
+    "participle": "sougth",
+    "translation": "procurar"
+  },
+  {
+    "infinitive": "sell",
+    "simplePast": "sold",
+    "participle": "sold",
+    "translation": "vender"
+  },
+  {
+    "infinitive": "send",
+    "simplePast": "sent",
+    "participle": "sent",
+    "translation": "enviar"
+  },
+  {
+    "infinitive": "set",
+    "simplePast": "set",
+    "participle": "set",
+    "translation": "colocar/programar"
+  },
+  {
+    "infinitive": "shake",
+    "simplePast": "shook",
+    "participle": "shaken",
+    "translation": "sacudir"
+  },
+  {
+    "infinitive": "shine",
+    "simplePast": "shone",
+    "participle": "shone",
+    "translation": "brilhar"
+  },
+  {
+    "infinitive": "shoot",
+    "simplePast": "shot",
+    "participle": "shot",
+    "translation": "atirar"
+  },
+  {
+    "infinitive": "show",
+    "simplePast": "showed",
+    "participle": "shown",
+    "translation": "mostrar"
+  },
+  {
+    "infinitive": "shrink",
+    "simplePast": "shrank/shrunk",
+    "participle": "shrunk/shrunken",
+    "translation": "encolher"
+  },
+  {
+    "infinitive": "shut",
+    "simplePast": "shut",
+    "participle": "shut",
+    "translation": "fechar"
+  },
+  {
+    "infinitive": "smell",
+    "simplePast": "smelt/smelled",
+    "participle": "smelt/smelled",
+    "translation": "cheirar"
+  },
+  {
+    "infinitive": "sing",
+    "simplePast": "sang",
+    "participle": "sung",
+    "translation": "cantar"
+  },
+  {
+    "infinitive": "sink",
+    "simplePast": "sank",
+    "participle": "sunk",
+    "translation": "afundar"
+  },
+  {
+    "infinitive": "sit",
+    "simplePast": "sat",
+    "participle": "sat",
+    "translation": "sentar"
+  },
+  {
+    "infinitive": "simple present",
+    "simplePast": "simple past",
+    "participle": "past participle",
+    "translation": "translation"
+  },
+  {
+    "infinitive": "sleep",
+    "simplePast": "slept",
+    "participle": "slept",
+    "translation": "dormir"
+  },
+  {
+    "infinitive": "speak",
+    "simplePast": "spoke",
+    "participle": "spoken",
+    "translation": "falar"
+  },
+  {
+    "infinitive": "spell",
+    "simplePast": "spelt/spelled",
+    "participle": "spelt/spelled",
+    "translation": "soletrar"
+  },
+  {
+    "infinitive": "spend",
+    "simplePast": "spent",
+    "participle": "spent",
+    "translation": "gastar"
+  },
+  {
+    "infinitive": "spill",
+    "simplePast": "spilt /spilled",
+    "participle": "spilt /spilled",
+    "translation": "derramar"
+  },
+  {
+    "infinitive": "spit",
+    "simplePast": "spat",
+    "participle": "spat",
+    "translation": "cuspir"
+  },
+  {
+    "infinitive": "split",
+    "simplePast": "split",
+    "participle": "split",
+    "translation": "dividir"
+  },
+  {
+    "infinitive": "spoil",
+    "simplePast": "spoilt/spoiled",
+    "participle": "spoilt/spoiled",
+    "translation": "estragar"
+  },
+  {
+    "infinitive": "spread",
+    "simplePast": "spread",
+    "participle": "spread",
+    "translation": "fechar"
+  },
+  {
+    "infinitive": "stand",
+    "simplePast": "stood",
+    "participle": "stood",
+    "translation": "ficar em pé"
+  },
+  {
+    "infinitive": "steal",
+    "simplePast": "stole",
+    "participle": "stolen",
+    "translation": "furtar"
+  },
+  {
+    "infinitive": "stick",
+    "simplePast": "stuck",
+    "participle": "stuck",
+    "translation": "colar"
+  },
+  {
+    "infinitive": "strike",
+    "simplePast": "struck",
+    "participle": "struck",
+    "translation": "bater"
+  },
+  {
+    "infinitive": "sweep",
+    "simplePast": "swept",
+    "participle": "swept",
+    "translation": "varrer"
+  },
+  {
+    "infinitive": "swing",
+    "simplePast": "swung",
+    "participle": "swung",
+    "translation": "balançar"
+  },
+  {
+    "infinitive": "swin",
+    "simplePast": "swan",
+    "participle": "swun",
+    "translation": "nadar"
+  },
+  {
+    "infinitive": "take",
+    "simplePast": "took",
+    "participle": "taken",
+    "translation": "pegar/tomar"
+  },
+  {
+    "infinitive": "teach",
+    "simplePast": "taught",
+    "participle": "taught",
+    "translation": "ensinar"
+  },
+  {
+    "infinitive": "tear",
+    "simplePast": "tore",
+    "participle": "torn",
+    "translation": "rasgar"
+  },
+  {
+    "infinitive": "tell",
+    "simplePast": "told",
+    "participle": "told",
+    "translation": "contar/dizer"
+  },
+  {
+    "infinitive": "think",
+    "simplePast": "thought",
+    "participle": "thought",
+    "translation": "pensar"
+  },
+  {
+    "infinitive": "throw",
+    "simplePast": "threw",
+    "participle": "thrown",
+    "translation": "jogar/lançar"
+  },
+  {
+    "infinitive": "thrust",
+    "simplePast": "thrust",
+    "participle": "thrust",
+    "translation": "empurrar"
+  },
+  {
+    "infinitive": "understand",
+    "simplePast": "understood",
+    "participle": "understood",
+    "translation": "entender"
+  },
+  {
+    "infinitive": "upset",
+    "simplePast": "upset",
+    "participle": "upset",
+    "translation": "aborrecer"
+  },
+  {
+    "infinitive": "wake",
+    "simplePast": "woke",
+    "participle": "woken",
+    "translation": "acordar"
+  },
+  {
+    "infinitive": "wear",
+    "simplePast": "wore",
+    "participle": "worn",
+    "translation": "vestir"
+  },
+  {
+    "infinitive": "weep",
+    "simplePast": "wept",
+    "participle": "wept",
+    "translation": "chorar"
+  },
+  {
+    "infinitive": "win",
+    "simplePast": "won",
+    "participle": "won",
+    "translation": "vencer"
+  },
+  {
+    "infinitive": "write",
+    "simplePast": "wrote",
+    "participle": "written",
+    "translation": "escrever"
+  }
+]
