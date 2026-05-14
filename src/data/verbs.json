@@ -33,7 +33,7 @@
     "infinitive": "become",
     "simplePast": "became",
     "participle": "become",
-    "translation": "torna-se"
+    "translation": "tornar-se"
   },
   {
     "infinitive": "begin",
@@ -45,7 +45,7 @@
     "infinitive": "bend",
     "simplePast": "bent",
     "participle": "bent",
-    "translation": "curva-se"
+    "translation": "curvar-se"
   },
   {
     "infinitive": "bet",
@@ -103,14 +103,14 @@
   },
   {
     "infinitive": "buy",
-    "simplePast": "bougth",
-    "participle": "bougth",
+    "simplePast": "bought",
+    "participle": "bought",
     "translation": "comprar"
   },
   {
     "infinitive": "catch",
-    "simplePast": "cautht",
-    "participle": "cautht",
+    "simplePast": "caught",
+    "participle": "caught",
     "translation": "agarrar"
   },
   {
@@ -264,12 +264,6 @@
     "translation": "dar"
   },
   {
-    "infinitive": "simple present",
-    "simplePast": "simple past",
-    "participle": "past participle",
-    "translation": "translation"
-  },
-  {
     "infinitive": "go",
     "simplePast": "went",
     "participle": "gone",
@@ -284,7 +278,7 @@
   {
     "infinitive": "grow",
     "simplePast": "grew",
-    "participle": "grouwn",
+    "participle": "grown",
     "translation": "crescer"
   },
   {
@@ -387,7 +381,7 @@
     "infinitive": "let",
     "simplePast": "let",
     "participle": "let",
-    "translation": "permirtir"
+    "translation": "permitir"
   },
   {
     "infinitive": "lie",
@@ -453,7 +447,7 @@
     "infinitive": "ring",
     "simplePast": "rang",
     "participle": "rung",
-    "translation": "tocar sino, etc"
+    "translation": "tocar sino, etc."
   },
   {
     "infinitive": "rise",
@@ -463,8 +457,8 @@
   },
   {
     "infinitive": "run",
-    "simplePast": "rang",
-    "participle": "rung",
+    "simplePast": "ran",
+    "participle": "run",
     "translation": "correr"
   },
   {
@@ -481,8 +475,8 @@
   },
   {
     "infinitive": "seek",
-    "simplePast": "sougth",
-    "participle": "sougth",
+    "simplePast": "sought",
+    "participle": "sought",
     "translation": "procurar"
   },
   {
@@ -564,12 +558,6 @@
     "translation": "sentar"
   },
   {
-    "infinitive": "simple present",
-    "simplePast": "simple past",
-    "participle": "past participle",
-    "translation": "translation"
-  },
-  {
     "infinitive": "sleep",
     "simplePast": "slept",
     "participle": "slept",
@@ -595,8 +583,8 @@
   },
   {
     "infinitive": "spill",
-    "simplePast": "spilt /spilled",
-    "participle": "spilt /spilled",
+    "simplePast": "spilt/spilled",
+    "participle": "spilt/spilled",
     "translation": "derramar"
   },
   {
@@ -621,7 +609,7 @@
     "infinitive": "spread",
     "simplePast": "spread",
     "participle": "spread",
-    "translation": "fechar"
+    "translation": "espalhar"
   },
   {
     "infinitive": "stand",
@@ -660,9 +648,9 @@
     "translation": "balançar"
   },
   {
-    "infinitive": "swin",
-    "simplePast": "swan",
-    "participle": "swun",
+    "infinitive": "swim",
+    "simplePast": "swam",
+    "participle": "swum",
     "translation": "nadar"
   },
   {
