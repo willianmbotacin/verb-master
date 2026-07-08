@@ -47,6 +47,16 @@ export function findVerbByInfinitive(
   return VERB_CATALOG.find((v) => v.infinitive.trim().toLowerCase() === key);
 }
 
+export function searchVerbs(query: string): VerbSheetRecord[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  return VERB_CATALOG.filter((verb) =>
+    [verb.infinitive, verb.simplePast, verb.participle, verb.translation].some((field) =>
+      field.trim().toLowerCase().includes(q),
+    ),
+  );
+}
+
 export function getVerbFieldRaw(verb: VerbSheetRecord, col: ChallengeColumn): string {
   switch (col) {
     case "infinitive":

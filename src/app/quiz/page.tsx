@@ -4,14 +4,17 @@ import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "rea
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CircularProgress from "@mui/material/CircularProgress";
 import Container from "@mui/material/Container";
 import LinearProgress from "@mui/material/LinearProgress";
+import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
+import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import {
   CHALLENGE_LABELS,
@@ -35,6 +38,57 @@ const COLUMN_ORDER: ChallengeColumn[] = [
 
 const START_SECONDS = 30;
 const LINEAR_TRACK_BG = "rgba(0, 82, 204, 0.15)";
+
+/** Common browser/OS voice names that are typically female (Web Speech has no standard gender field). */
+const EN_US_FEMALE_HINT =
+  /\b(female|woman|zira|jenny|aria|samantha|karen|hazel|victoria|susan|linda|joanna|michelle|sara|ivy|allison|ashley)\b|microsoft\s+(aria|jenny|zira|michelle|ana|natasha)/i;
+
+const PT_BR_FEMALE_HINT =
+  /\b(female|mulher|francisca|maria|heloisa|luciana|fernanda|camila|juliana|vit[oó]ria)\b|microsoft.*(maria|francisca|heloisa)|google\s+portugu[eê]s.*brasil/i;
+
+function normLang(l: string) {
+  return l.toLowerCase().replace("_", "-");
+}
+
+function pickSpeechVoice(lang: "en-US" | "pt-BR"): SpeechSynthesisVoice | undefined {
+  if (typeof window === "undefined") return undefined;
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length === 0) return undefined;
+
+  if (lang === "en-US") {
+    const us = voices.filter((v) => normLang(v.lang).startsWith("en-us"));
+    const female = us.filter((v) => EN_US_FEMALE_HINT.test(v.name));
+    return (
+      female.find((v) => /united states|u\.s\.|us english/i.test(v.name)) ??
+      female[0] ??
+      us.find((v) => /google\s+us\s+english(?!.*\bmale\b)/i.test(v.name)) ??
+      us.find((v) => /united states|u\.s\.|us english/i.test(v.name)) ??
+      us[0] ??
+      voices.find((v) => normLang(v.lang).startsWith("en"))
+    );
+  }
+
+  const br = voices.filter((v) => normLang(v.lang).startsWith("pt-br"));
+  const femaleBr = br.filter((v) => PT_BR_FEMALE_HINT.test(v.name));
+  return (
+    femaleBr.find((v) => /brazil|brasil/i.test(v.name)) ??
+    femaleBr[0] ??
+    br.find((v) => PT_BR_FEMALE_HINT.test(v.name)) ??
+    br.find((v) => /brazil|brasil/i.test(v.name)) ??
+    br[0] ??
+    voices.find((v) => normLang(v.lang).startsWith("pt"))
+  );
+}
+
+function speakWithLang(text: string, lang: "en-US" | "pt-BR") {
+  if (typeof window === "undefined" || !text.trim()) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text.trim());
+  u.lang = lang;
+  const voice = pickSpeechVoice(lang);
+  if (voice) u.voice = voice;
+  window.speechSynthesis.speak(u);
+}
 
 function buildResultHref(
   outcome: "success" | "fail",
@@ -115,6 +169,28 @@ function QuizPageContent() {
     if (finishedRef.current) return;
     goResult("fail");
   }, [secondsLeft, goResult]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const synth = window.speechSynthesis;
+    const warmVoices = () => {
+      void synth.getVoices();
+    };
+    warmVoices();
+    synth.addEventListener("voiceschanged", warmVoices);
+    return () => {
+      synth.removeEventListener("voiceschanged", warmVoices);
+      synth.cancel();
+    };
+  }, [verbParam, columnKey]);
+
+  const handleSpeakVerb = useCallback(() => {
+    if (!pickedVerb || ended || secondsLeft <= 0) return;
+    const text = getVerbFieldRaw(pickedVerb, columnKey).trim();
+    if (!text) return;
+    const lang: "en-US" | "pt-BR" = columnKey === "translation" ? "pt-BR" : "en-US";
+    speakWithLang(text, lang);
+  }, [pickedVerb, columnKey, ended, secondsLeft]);
 
   const currentColumn = otherColumns[step - 1];
   const currentStepLabel = currentColumn
@@ -208,12 +284,54 @@ function QuizPageContent() {
           </Box>
 
           {pickedVerb && (
-            <Typography
-              variant="h6"
-              sx={{ textAlign: "center", px: 1, fontWeight: 800, color: "text.primary", letterSpacing: 0.04 }}
-            >
-              {spinnerLabel(pickedVerb, columnKey)}
-            </Typography>
+            <Box sx={{ display: "flex", justifyContent: "center", width: "100%", px: 1 }}>
+              <Box
+                sx={{
+                  position: "relative",
+                  display: "inline-block",
+                  maxWidth: "min(100%, calc(100vw - 48px))",
+                  textAlign: "center",
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  component="span"
+                  sx={{
+                    fontWeight: 800,
+                    color: "text.primary",
+                    letterSpacing: 0.04,
+                    lineHeight: 1.2,
+                    wordBreak: "break-word",
+                  }}
+                >
+                  {spinnerLabel(pickedVerb, columnKey)}
+                </Typography>
+                <Tooltip title="Listen" placement="top">
+                  <Box
+                    component="span"
+                    sx={{
+                      position: "absolute",
+                      left: "100%",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      ml: 0.25,
+                      lineHeight: 0,
+                    }}
+                  >
+                    <IconButton
+                      color="primary"
+                      size="small"
+                      aria-label="Listen to pronunciation"
+                      onClick={handleSpeakVerb}
+                      disabled={secondsLeft <= 0 || ended}
+                      sx={{ p: 0.5 }}
+                    >
+                      <VolumeUpIcon fontSize="small" />
+                    </IconButton>
+                  </Box>
+                </Tooltip>
+              </Box>
+            </Box>
           )}
 
           <Card
